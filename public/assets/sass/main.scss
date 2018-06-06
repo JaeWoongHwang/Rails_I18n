@@ -32,7 +32,7 @@
 				containers: 90%,
 			),
 			narrower: (
-				containers: (90%, true),
+				containers: (100%, true),
 			),
 			mobile: (
 				containers: (100%, true),
@@ -1186,7 +1186,7 @@
 	#banner {
 		background-attachment:	scroll,							fixed;
 		background-color:		#666;
-		background-image:		url('images/overlay.png'),		url('../..images/banner.jpg');
+		background-image:		url('images/overlay.png'),		url('../../images/banner.jpg');
 		background-position:	top left,						center center;
 		background-repeat:		repeat,							no-repeat;
 		background-size:		auto,							cover;
@@ -1726,7 +1726,9 @@
 				h2 {
 					font-size: 2.25em;
 				}
-
+				h4{
+					text-align: left;
+				}
 				p {
 					font-size: 1.25em;
 				}

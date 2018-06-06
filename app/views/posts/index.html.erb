@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alpha by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">FANDING</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Language</a>
+								<ul>
+									<li>
+										<%= content_tag :li do%>
+											<%= link_to 'Korean', locale: :ko%>
+										<% end unless current_page?(locale: :ko)%>
+									</li>
+									<li>
+										<%= content_tag :li do%>
+											<%= link_to 'English', locale: :en%>
+										<% end unless current_page?(locale: :en)%>
+									</li>
+									<li>
+										<%= content_tag :li do%>
+											<%= link_to 'Chinese', locale: :'zh-CN'%>
+										<% end unless current_page?(locale: :'zh-CN')%>
+									</li>
+									<li>
+										<%= content_tag :li do%>
+											<%= link_to 'Japanese', locale: :ja%>
+										<% end unless current_page?(locale: :ja)%>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+						<h2><%= t 'attributes.name' %></h2>
+						<h4><p><%= t 'attributes.title' %></h4>
+						<p><%= t 'attributes.content'%></p>
+					<ul class="actions">
+						<li><a href="#" class="button special">Sign Up</a></li>
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2><%= t 'introduction.title' %></h2>
+							<p><%= t 'introduction.content' %></p>
+						</header>
+						<span class="image featured"><img src="images/mockup3.png" alt="" /></span>
+					</section>
+
+					<section class="box special features">
+						<div class="features-row">
+							<section>
+								<span class = "value"><img src ="images/meet.png" /></span>
+								<h3><%= t 'introduction.meet' %></h3>
+								<p><%= t 'introduction.meet_desc' %></p>
+							</section>
+							<section>
+								<span class = "value"><img src ="images/meet.png" /></span>
+								<h3><%= t 'introduction.benefit' %></h3>
+								<p><%= t 'introduction.benefit_desc' %></p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class = "value"><img src ="images/meet.png" /></span>
+								<h3><%= t 'introduction.donate' %></h3>
+								<p><%= t 'introduction.donate_desc' %></p>
+							</section>
+							<section>
+								<span class = "value"><img src ="images/meet.png" /></span>
+								<h3><%= t 'introduction.share' %></h3>
+								<p><%= t 'introduction.share_desc' %></p>
+							</section>
+						</div>
+					</section>
+
+					<div class="row">
+						<div class="6u 12u(narrower)">
+							<section class="box special">
+								<span class="image featured"><h3><%= t 'images.choose' %></h3><img src="images/Screenshot1.png" alt="" /></span>
+								</ul>
+							</section>
+
+						</div>
+						<div class="6u 12u(narrower)">
+							<section class="box special">
+								<span class="image featured"><h3><%= t 'images.funding_page' %></h3><img src="images/Screenshot2.png" alt="" /></span>
+							</section>
+
+						</div>
+						<div class="6u 12u(narrower)">
+							<section class="box special">
+				 				<span class="image featured"><h3><%= t 'images.my_page' %></h3><img src="images/Screenshot3.png" alt="" /></span>
+							</section>
+
+						</div>
+
+						<div class="6u 12u(narrower)">
+							<section class="box special">
+								<span class="image featured"><h3><%= t 'images.celeb_page' %></h3><img src="images/Screenshot4.png" alt="" /></span>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2><%= t 'footer.title' %></h2>
+					<p><%= t 'footer.content' %></p>
+
+					<form>
+						<div class="row uniform 50%">
+							<div class="8u 12u(mobilep)">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="4u 12u(mobilep)">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; FANDING. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

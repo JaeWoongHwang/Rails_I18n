@@ -28,6 +28,27 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
-en:
-  hello: "Hello world"
+ja:
+  attributes:
+    name: "FANDING"
+    title: "ファンの力で"
+    content: "私のスターを満たすために、世界でも変化させる新しいソーシャルファンディングプラットフォーム"
+  introduction:
+    title:
+    content:
+    meet:
+    meet_desc:
+    benefit:
+    benefit_desc:
+    donate:
+    donate_desc:
+    share:
+    share_desc:
+  images:
+    choose: "CHOOSE FUNDING"
+    funding_page: "FUNDING PAGE"
+    my_page: "MY PAGE"
+    celeb_page: "CELEBRITY PAGE"
+  footer:
+    title: "Sign up for 'FANDING' and leave ideas"
+    content: "We provide presents related to our services to those who left ideas."
